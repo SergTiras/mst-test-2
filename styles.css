@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    position: relative;
+    z-index: 1;
+    background: #000;
+}
+
+.top {
+    height: 50px;
+}
+
+.bottom {
+    height: 100%;
+}
+
+.divs {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.divs:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 58px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}
+
+.divs:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 77px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}
+
+.divs-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+
+.divs-part:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -32px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}
+
+.divs-part:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -18px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}
+
+.text {
+    font-size: 80px;
+    font-weight: bold;
+    background-color: black;
+    padding: 0 20px;
+}
+
+.text:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 160px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}
+.text:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 255px;
+    height: 50px;
+    background-color: black;
+    z-index: -1;
+}

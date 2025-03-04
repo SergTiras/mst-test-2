@@ -115,7 +115,7 @@ body, html {
     padding: 0 20px;
 }
 
-.text:before{
+.text:before {
     content: '';
     position: absolute;
     left: 0;
@@ -125,7 +125,8 @@ body, html {
     background-color: black;
     z-index: -1;
 }
-.text:after{
+
+.text:after {
     content: '';
     position: absolute;
     left: 0;
@@ -134,4 +135,29 @@ body, html {
     height: 50px;
     background-color: black;
     z-index: -1;
+}
+
+@media screen and (max-width: 769px) {
+    .divs:before {
+        bottom: 58px;
+        height: 20px;
+    }
+    .divs:after {
+        top: 77px;
+        height: 20px;
+    }
+    .divs-part:before {
+        bottom: -32px;
+        height: 20px;
+    }
+    .divs-part:after {
+        top: -18px;
+        height: 20px;
+    }
+    .text {
+        font-size: 40px;
+        font-weight: bold;
+        background-color: black;
+        padding: 0 20px;
+    }
 }
